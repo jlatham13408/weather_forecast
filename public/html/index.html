@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to AJAX</title>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+
+  <link rel='stylesheet' href='css/styles.css'>
+  <script type="text/javascript" src="js/weather.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 </head>
 <body>
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
-      <div class="form-group">
-        <label>Latitude:</label>
-        <input type="text" class='form-control' id='latitude' name='latitude'>
+      <div class="col-md-4"> -->
+      <!-- <div class="form-group">
+        <label>Testing...</label>
+        <input type="text" class="form-control">
       </div>
-      <div class="form-group">
-        <label>Longitude:</label>
-        <input type="text" class="form-control" id="longitude" name="longtiude">
-      </div>
-      <button class="btn btn-default" id='get-weather'>Get Weather</button>
     </div>
-    <hr>
+      <div class="col-md-6">
+        <input type="text" class="form-control">
+      </div> -->
+<div class="container">
+  <div class="weather-app">
     <div class="row">
-      <pre id="output">
-
-      </pre>
+    <div class="location">
+    <div class="col-md-12">
+        <div class="location"><span id="loc">Unknown</span></div>
     </div>
   </div>
+</div>
 
-
-  <script src="js/config.js"></script>
-  <script src="js/app.js"></script>
-</body>
+    <div class="temperature row">
+    <div class="col-md-4">
+      <div class="temp"><span id="temp">0</span>&deg;</div>
+    <!-- </div> -->
+  <!-- </div> -->
+    <div class="img">
+      <img id="icon" width="200px" src="images/code/804.png" />
+    </div>
+  </div>
+</div>
+<div class="description row"><span id="description">text</span></div>
+      <div class="wind">
+        <span id="wind">0</span> mph <span id="direction">N</span>
+      </div>
+      <div class="humidity">
+        <span id="humidity">0</span>%
+      </div>
+</div>
+</div>
+  <!-- <script id="general-weather" type="test/x-handlebars-template"></script> -->
+  </body>
 </html>
